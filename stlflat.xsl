@@ -48,7 +48,7 @@
         </xsl:call-template>
     </xsl:template>
 <xsl:template match="*">
-        module.exports =[<xsl:for-each select="folder">
+        module.exports =[<xsl:for-each select="//useragent">
         <xsl:apply-templates select="." />  
         <xsl:if test="position()!=last()">
             <xsl:text>,</xsl:text>
